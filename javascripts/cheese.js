@@ -28,9 +28,12 @@ const cheeseBuilder = () => {
     for (let i = 0; i < cheese.length; i++) {
         cheeseDomString += `
         <div class="form-group form-check">
-        <input type="checkbox" class="form-check-input" id="${cheese[i].id">
-        <label class="form-check-label" for=${cheese[i].id}>Check me out</label>
+        <input type="checkbox" class="form-check-input" id="${cheese[i].id}>
+        <label class="form-check-label" for=${cheese[i].id}>${cheese[i].name}</label>
         </div>
         `
     }
+    utilities.printToDom('cheeseType', cheeseDomString);
 }
+
+export default { cheeseBuilder };
