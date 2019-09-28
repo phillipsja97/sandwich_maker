@@ -4,10 +4,12 @@ body {
 
 .title {
     padding: 10px;
+    margin: 25px;
 }
 
 .chooseTitle {
     padding: 10px;
+    margin: 25px;
 }
 
 .container {
@@ -53,4 +55,16 @@ body {
 #selectedOrder {
     border-style: solid;
     background-color: gray;
+}
+
+/* #finalOrder {
+    border-style: solid;
+    background-color: white;
+    padding: 50px;
+    margin: 50px;
+} */
+
+.card {
+    padding: 10px;
+    margin: 50px;
 }
