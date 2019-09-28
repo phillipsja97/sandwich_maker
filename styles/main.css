@@ -1,3 +1,56 @@
 body {
-    background-color: blue;
+    background-image: url(https://previews.123rf.com/images/notkoo2008/notkoo20081506/notkoo2008150606290/40720811-sandwich-cartoon-seamless-pattern-background.jpg);
+}
+
+.title {
+    padding: 10px;
+}
+
+.chooseTitle {
+    padding: 10px;
+}
+
+.container {
+    border-style: solid;
+    padding: 10px;
+    background-color: white;
+}
+
+#breadType {
+    border-style: dotted;
+    padding: 10px;
+    background-color: gray;
+}
+
+#cheeseType {
+    border-style: dotted;
+    padding: 10px;
+    background-color: gray;
+}
+
+#meatType {
+    border-style: dotted;
+    padding: 10px;
+    background-color: gray;
+}
+
+#veggiesType {
+    border-style: dotted;
+    padding: 10px;
+    background-color: gray;
+}
+
+#condimentsType {
+    border-style: dotted;
+    padding: 10px;
+    background-color: gray;
+}
+
+#orderButton {
+    padding: 10px;
+}
+
+#selectedOrder {
+    border-style: solid;
+    background-color: gray;
 }

@@ -23,12 +23,28 @@ const cheese = [
     }, 
 ];
 
+const getSelectedCheeses = () => {
+    const selectedCheeses = [];
+    const cheeseCheckboxes = document.getElementsByClassName('cheese');
+    for (let j = 0; j < cheeseCheckboxes.length; j++) {
+        for (let k = 0; k < cheese.length; k++) {
+            if (cheeseCheckboxes[j].checked && cheeseCheckboxes[j].id === cheese[k].id) {
+
+            selectedCheeses.push(cheese[k]);
+        }
+    }
+    }
+    console.log(selectedCheeses);
+    return selectedCheeses;
+};
+
+
 const cheeseBuilder = () => {
     let cheeseDomString = '';
     for (let i = 0; i < cheese.length; i++) {
         cheeseDomString += `
         <div class="form-group form-check">
-        <input type="checkbox" class="form-check-input" id="${cheese[i].id}>
+        <input type="checkbox" class="form-check-input cheese" id="${cheese[i].id}">
         <label class="form-check-label" for=${cheese[i].id}>${cheese[i].name}</label>
         </div>
         `
@@ -36,4 +52,4 @@ const cheeseBuilder = () => {
     utilities.printToDom('cheeseType', cheeseDomString);
 }
 
-export default { cheeseBuilder };
+export default { cheeseBuilder, getSelectedCheeses };
