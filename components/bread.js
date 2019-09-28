@@ -2,22 +2,22 @@ import utilities from '../helpers/utilities.js'
 
 const bread = [
     {
-    name: 'White bread',
+    name: 'White',
     id: 'bread1',
     price: 200,
     },
     {
-    name: 'Wheat bread',
+    name: 'Wheat',
     id: 'bread2',
     price: 250,
     },
     {
-    name: 'Sourdough bread',
+    name: 'Sourdough',
     id: 'bread3',
     price: 300,
     },
     {
-    name: 'Rye bread',
+    name: 'Rye',
     id: 'bread4',
     price: 250,
     },
